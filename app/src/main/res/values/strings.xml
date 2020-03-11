@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Lab06_CustomQuizApp</string>
+    <string name="writtenForm">Type your answer</string>
+    <plurals name="headerForm">
+        <item quantity="zero">Lab 06 QuizApp</item>
+        <item quantity="one">Question %d:</item>
+        <item quantity="other">Results</item>
+    </plurals>
+    <string-array name="questions">
+        <item></item>
+    </string-array>
+</resources>
