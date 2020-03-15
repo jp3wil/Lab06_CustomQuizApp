@@ -6,7 +6,19 @@
         <item quantity="one">Question %d:</item>
         <item quantity="other">Results</item>
     </plurals>
-    <string-array name="questions">
-        <item></item>
+    <string-array name="four_check_layout">
+        <item>Strongly Agree</item>
+        <item>Agree</item>
+        <item>Disagree</item>
+        <item>Strongly Disagree</item>
     </string-array>
+    <string-array name="true_false_layout">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    <string name="proceedButtOptOne">Next</string>
+    <string name="proceedButtOptTwo">Finish</string>
+    <string name="question_1">What is your name?</string>
+    <string name="question_2">Do you enjoy Mobile App Development?</string>
+    <string name="question_3">Mr. Tra is better than Mr. Kosek.</string>
 </resources>

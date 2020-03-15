@@ -11,10 +11,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=""
-        app:layout_constraintBottom_toTopOf="@id/questionBox"
+        app:layout_constraintBottom_toTopOf="@id/prevResps"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/prevResps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/questionBox"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header" />
 
     <TextView
         android:id="@+id/questionBox"
@@ -51,7 +60,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <RadioGroup
-                android:id="@+id/checkResponse"
+                android:id="@+id/fourResponse"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:visibility="gone"
@@ -81,6 +90,37 @@
                     android:layout_height="75dp" />
 
             </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/twoResponse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" >
+
+                <RadioButton
+                    android:id="@+id/trueResp"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp" />
+
+                <RadioButton
+                    android:id="@+id/falseResp"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/proceedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/proceedButtOptOne"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
